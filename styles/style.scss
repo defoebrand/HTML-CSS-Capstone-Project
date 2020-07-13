@@ -1,0 +1,209 @@
+@font-face {
+  font-family: gotham-light;
+  src: url("../fonts/GothamRoundedLight_21020.ttf");
+}
+@font-face {
+  font-family: gotham-bold;
+  src: url("../fonts/GothamBold.ttf");
+}
+@font-face {
+  font-family: helvetica-light;
+  src: url("../fonts/HelveticaNeue-Light.ttf");
+}
+@font-face {
+  font-family: helvetica-medium;
+  src: url("../fonts/HelveticaNeue-Medium.ttf");
+}
+@font-face {
+  font-family: helvetica-bold;
+  src: url("../fonts/HelveticaNeue-Bold.ttf");
+}
+$red: #d35266;
+$gray: #888;
+$dark: #383838;
+$font-family-sans-serif: "gotham-light", "gotham-bold", blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+.goth-lt {
+  font-family: gotham-light, sans-serif;
+}
+
+.goth-bld {
+  font-family: gotham-bold, sans-serif;
+}
+
+.helvet-lt {
+  font-family: helvetica-light, sans-serif;
+}
+
+.helvet-md {
+  font-family: helvetica-medium, sans-serif;
+}
+
+.helvet-bld {
+  font-family: helvetica-bold, sans-serif;
+}
+
+.border-dark {
+  border: 1px solid black;
+}
+
+.border-light {
+  border: 1px solid gray;
+}
+/* Page Styles */
+.nav-logo {
+  img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.icon-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  padding-left: 0;
+  padding-right: 0;
+
+  a {
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+
+    img {
+      width: 50%;
+      height: 50%;
+      margin: 10px;
+      border-radius: 100%;
+    }
+
+    p {
+      font-size: 2.5rem;
+      color: $black;
+    }
+  }
+
+  .small {
+    @media only screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  .big {
+    display: none;
+    @media only screen and (min-width: 768px) {
+      display: block;
+    }
+  }
+}
+
+.icon-links:hover {
+  text-decoration: none;
+}
+
+iframe {
+  min-height: 350px;
+  border: 0;
+}
+/* Item Cards */
+#home {
+  .card-wrapper {
+    max-height: 725px;
+    overflow-y: hidden;
+  }
+}
+
+#results {
+  .card-wrapper {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.item-card {
+  position: relative;
+  background-color: white;
+  margin: 10px;
+  width: 200px;
+  height: 350px;
+  padding: 5px;
+  box-shadow: 0 0 10px 0 $black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-img {
+  width: 100%;
+  height: 190px;
+  margin-bottom: 5px;
+}
+
+.item-name {
+  padding: 0 5px;
+  font-size: 1.5rem;
+}
+
+.item-price {
+  color: $black;
+  font-size: 1.4rem;
+  padding: 5px;
+}
+
+.sale-price {
+  display: none;
+}
+
+.sale {
+  .item-price {
+    color: $black;
+    font-size: 1.4rem;
+    padding: 5px;
+    text-decoration: line-through;
+  }
+
+  .sale-price {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 1.4rem;
+  }
+}
+
+.sale::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 75px solid $yellow;
+  border-right: 75px solid transparent;
+}
+
+.sale::after {
+  position: absolute;
+  top: 18px;
+  left: 3px;
+  content: "SALE!";
+  transform: rotate(-45deg);
+  font-size: 15px;
+}
+/* Footer */
+.affiliates {
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 15px;
+    color: $black;
+    font-family: gotham-bold, sans-serif;
+
+    img {
+      width: 50px;
+    }
+  }
+}
