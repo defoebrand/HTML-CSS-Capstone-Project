@@ -187,6 +187,7 @@ iframe {
   height: 0;
   border-top: 75px solid $yellow;
   border-right: 75px solid transparent;
+  z-index: 2;
 }
 
 .sale::after {
@@ -196,12 +197,14 @@ iframe {
   content: "SALE!";
   transform: rotate(-45deg);
   font-size: 15px;
+  z-index: 3;
 }
 
 .horizontal-item-card {
   position: relative;
   background-color: white;
-  margin: 10px;
+  max-width: 750px;
+  margin: 10px auto;
   padding: 5px;
   box-shadow: 0 0 10px 0 $black;
   display: flex;
