@@ -45,7 +45,30 @@
   </header>
 
   <main class="row">
-    <div class="col-4 border d-none d-md-flex"></div>
+    <div class="col-4 border d-none d-md-flex flex-column px-0 py-2">
+      <div class="radios d-flex flex-column justify-content-center align-items-start p-3">
+        <label for="military"><input type="radio" id="military">
+          Military</label>
+        <label for="medical-professional"><input type="radio" id="medical-professional">
+          Medical Professional</label>
+        <label for="civilian"><input type="radio" id="civilian">
+          Civilian</label><br>
+      </div>
+      <div class="checkboxes d-flex flex-column justify-content-center align-items-start p-3 border">
+        <label for="massive-bleeding"><input type="checkbox" id="massive-bleeding" checked>
+          Massive Bleeding</label>
+        <label for="airway"><input type="checkbox" id="airway">
+          Airway</label>
+        <label for="respiration"><input type="checkbox" id="respiration">
+          Respiration</label>
+        <label for="circulation"><input type="checkbox" id="circulation">
+          Circulation</label>
+        <label for="hypothermia"><input type="checkbox" id="hypothermia">
+          Hypothermia</label>
+      </div>
+
+      <a href="results.html" class="btn btn-dark border rounded-0">Search</a>
+    </div>
     <div class="col-8 border mx-auto">
       <div class="horizontal-item-card sale row">
         <img class="card-img col-5" src="images/bleed-control.png" alt="">
@@ -105,7 +128,7 @@
 
     </div>
     <div class="col-6 border">
-      <ul>March Algorithm
+      <ul>
         <li>Massive Bleeding</li>
         <li>Airway</li>
         <li>Respiration</li>
