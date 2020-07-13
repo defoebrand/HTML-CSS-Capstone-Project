@@ -10091,6 +10091,20 @@ iframe {
   font-size: 15px;
 }
 
+.horizontal-item-card {
+  position: relative;
+  background-color: white;
+  margin: 10px;
+  padding: 5px;
+  box-shadow: 0 0 10px 0 #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.horizontal-item-card img {
+  width: 100%;
+}
+
 /* Footer */
 .affiliates a {
   display: flex;
@@ -10105,18 +10119,8 @@ iframe {
   width: 50px;
 }
 
-.horizontal-item-card {
-  position: relative;
-  background-color: white;
-  margin: 10px;
-  padding: 5px;
-  box-shadow: 0 0 10px 0 #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.horizontal-item-card img {
-  width: 100%;
+img {
+  width: 75px;
 }
 
 /*# sourceMappingURL=style.css.map */

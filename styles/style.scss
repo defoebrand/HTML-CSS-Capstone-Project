@@ -197,6 +197,21 @@ iframe {
   transform: rotate(-45deg);
   font-size: 15px;
 }
+
+.horizontal-item-card {
+  position: relative;
+  background-color: white;
+  margin: 10px;
+  padding: 5px;
+  box-shadow: 0 0 10px 0 $black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 100%;
+  }
+}
 /* Footer */
 .affiliates {
   a {
@@ -214,17 +229,6 @@ iframe {
   }
 }
 
-.horizontal-item-card {
-  position: relative;
-  background-color: white;
-  margin: 10px;
-  padding: 5px;
-  box-shadow: 0 0 10px 0 $black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  img {
-    width: 100%;
-  }
+img {
+  width: 75px;
 }
