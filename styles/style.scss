@@ -19,9 +19,15 @@
   src: url("../fonts/HelveticaNeue-Bold.ttf");
 }
 $red: #d35266;
+$danger: $red;
 $gray: #888;
 $dark: #383838;
 $font-family-sans-serif: "gotham-light", "gotham-bold", blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$carousel-control-color: $red;
+
+.active {
+  color: $red;
+}
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
 .goth-lt {
@@ -205,5 +211,20 @@ iframe {
     img {
       width: 50px;
     }
+  }
+}
+
+.horizontal-item-card {
+  position: relative;
+  background-color: white;
+  margin: 10px;
+  padding: 5px;
+  box-shadow: 0 0 10px 0 $black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 100%;
   }
 }
