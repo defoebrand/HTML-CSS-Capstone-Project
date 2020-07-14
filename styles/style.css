@@ -10015,6 +10015,21 @@ main {
   color: #888;
 }
 
+.video iframe {
+  height: 205px;
+  border: none;
+}
+.video li,
+.video p,
+.video ul {
+  color: #383838 !important;
+  font-family: helvetica-medium;
+}
+.video ul {
+  padding: 0 5px;
+  list-style: inside;
+}
+
 /* Item Cards */
 .item-card {
   position: relative;
