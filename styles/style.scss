@@ -71,6 +71,21 @@ main {
 }
 
 /* Header */
+.burger-content {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: max-content;
+  padding: 10px;
+  background-color: white;
+  z-index: 5;
+  border: 1px solid $red;
+}
+
+.fa-bars {
+  color: $light;
+}
+
 .ad-btn {
   max-height: 40px;
   line-height: 30px;

@@ -9967,6 +9967,21 @@ main {
 }
 
 /* Header */
+.burger-content {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: max-content;
+  padding: 10px;
+  background-color: white;
+  z-index: 5;
+  border: 1px solid #d35266;
+}
+
+.fa-bars {
+  color: #f7f7f7;
+}
+
 .ad-btn {
   max-height: 40px;
   line-height: 30px;
