@@ -10143,6 +10143,10 @@ iframe {
   width: 100%;
 }
 
+.search-count {
+  line-height: 50px;
+}
+
 /* Footer */
 footer .footer-logo {
   display: flex;
