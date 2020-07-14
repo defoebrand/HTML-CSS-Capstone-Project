@@ -67,6 +67,10 @@ $carousel-control-color: $red;
 /* Page Styles */
 
 /* Header */
+.ad-btn {
+  max-height: 40px;
+  line-height: 30px;
+}
 
 .search-banner::before {
   display: block;
@@ -79,6 +83,16 @@ $carousel-control-color: $red;
   background-size: 50%;
   background-position: left;
   opacity: 0.05;
+}
+
+.search-bar {
+  max-width: 992px;
+
+  p {
+    line-height: 38px;
+    background-color: $light;
+    color: $dark;
+  }
 }
 
 .nav-link {
@@ -246,24 +260,31 @@ iframe {
 }
 
 /* Footer */
-.affiliates {
-  a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0 15px;
-    color: $black;
-    font-family: gotham-bold, sans-serif;
-
-    img {
-      width: 50px;
-    }
-  }
-}
 
 footer {
-  .info {
-    width: 75px;
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h4 {
+      max-width: 100px;
+    }
+
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .cat-links {
+    line-height: 15px;
+
+    h4 {
+      margin-bottom: 20px;
+      color: $red;
+      padding-bottom: 10px;
+      border-bottom: 1px solid $red;
+    }
   }
 }
