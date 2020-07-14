@@ -103,7 +103,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5rem;
 }
 
-p {
+p, .item-card .buy-it b {
   margin-top: 0;
   margin-bottom: 1rem;
 }
@@ -9874,7 +9874,7 @@ img {
     page-break-inside: avoid;
   }
 
-  p,
+  p, .item-card .buy-it b,
 h2,
 h3 {
     orphans: 3;
@@ -9977,6 +9977,9 @@ main {
   z-index: 5;
   border: 1px solid #d35266;
 }
+.burger-content input {
+  width: 150px;
+}
 
 .fa-bars {
   color: #f7f7f7;
@@ -10005,7 +10008,7 @@ main {
 .search-bar {
   max-width: 992px;
 }
-.search-bar p {
+.search-bar p, .search-bar .item-card .buy-it b, .item-card .buy-it .search-bar b {
   line-height: 38px;
   background-color: #f7f7f7;
   color: #383838;
@@ -10021,6 +10024,8 @@ main {
 }
 .video li,
 .video p,
+.video .item-card .buy-it b,
+.item-card .buy-it .video b,
 .video ul {
   color: #383838 !important;
   font-family: helvetica-medium, sans-serif;
@@ -10050,9 +10055,27 @@ main {
   display: flex;
   flex-direction: column;
   align-items: start;
-  justify-content: center;
+  justify-content: space-between;
 }
-
+.item-card h2 {
+  font-size: 1.25rem;
+}
+.item-card p, .item-card .buy-it b {
+  margin: 0;
+}
+.item-card .affiliate {
+  font-size: 0.75rem;
+}
+.item-card .buy-it {
+  justify-content: space-around;
+  width: 100%;
+}
+.item-card .buy-it button {
+  margin: 0;
+}
+.item-card .buy-it p, .item-card .buy-it b {
+  font-size: 1rem;
+}
 .card-img {
   width: 100%;
   height: 190px;
@@ -10124,7 +10147,7 @@ main {
   width: 100%;
   max-width: 200px;
 }
-.horizontal-item-card p {
+.horizontal-item-card p, .horizontal-item-card .item-card .buy-it b, .item-card .buy-it .horizontal-item-card b {
   margin: 0;
   color: #d35266;
 }
@@ -10159,7 +10182,7 @@ main {
 .search-aside {
   max-width: 325px;
 }
-.search-aside p {
+.search-aside p, .search-aside .item-card .buy-it b, .item-card .buy-it .search-aside b {
   color: #000;
   font-family: gotham-bold, sans-serif;
   width: 100%;
@@ -10245,7 +10268,7 @@ footer .home-footer-left {
   justify-content: end;
   width: 75%;
 }
-.settings div p {
+.settings div p, .settings div .item-card .buy-it b, .item-card .buy-it .settings div b {
   margin: 0;
   line-height: 25px;
   color: #d35266;
