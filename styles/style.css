@@ -10000,57 +10000,6 @@ main {
   color: #888;
 }
 
-.nav-logo img {
-  width: 100px;
-  height: 100px;
-}
-
-.icon-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px auto;
-  padding-left: 0;
-  padding-right: 0;
-}
-.icon-links a {
-  text-decoration: none;
-  text-align: center;
-  width: 100%;
-}
-.icon-links a img {
-  width: 50%;
-  height: 50%;
-  margin: 10px;
-  border-radius: 100%;
-}
-.icon-links a p {
-  font-size: 2.5rem;
-  color: #000;
-}
-@media only screen and (min-width: 768px) {
-  .icon-links .small {
-    display: none;
-  }
-}
-.icon-links .big {
-  display: none;
-}
-@media only screen and (min-width: 768px) {
-  .icon-links .big {
-    display: block;
-  }
-}
-
-.icon-links:hover {
-  text-decoration: none;
-}
-
-iframe {
-  min-height: 350px;
-  border: 0;
-}
-
 /* Item Cards */
 .item-card {
   position: relative;
@@ -10078,7 +10027,7 @@ iframe {
 }
 
 .item-price {
-  color: #000;
+  color: #d35266;
   font-size: 1.4rem;
   padding: 5px;
 }
@@ -10097,6 +10046,7 @@ iframe {
   display: inline-block;
   margin-left: 10px;
   font-size: 1.4rem;
+  color: #d35266;
 }
 
 .sale::before {
@@ -10136,6 +10086,33 @@ iframe {
 .horizontal-item-card img {
   width: 100%;
 }
+.horizontal-item-card p {
+  margin: 0;
+  color: #d35266;
+}
+.horizontal-item-card .affiliate {
+  color: #000;
+  font-family: gotham-light;
+  padding: 5px;
+  white-space: nowrap;
+}
+
+.item-quality {
+  padding: 0 5px;
+}
+
+.buy-it {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 5px;
+}
+.buy-it button {
+  width: 25px;
+  height: 25px;
+  color: #888;
+  margin-right: 25px;
+}
 
 .search-aside p {
   color: #000;
@@ -10145,6 +10122,26 @@ iframe {
 
 .search-count {
   line-height: 50px;
+}
+
+.page-number {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.page-number .page-btn {
+  width: 25px;
+  height: 25px;
+  margin: 10px 5px;
+  border: 1px solid #888;
+  border-radius: 2.5px;
+  background-color: white;
+  color: #888;
+  font-family: helvetica-medium;
+}
+.page-number .active-btn {
+  background-color: #d35266;
+  color: white;
 }
 
 /* Footer */

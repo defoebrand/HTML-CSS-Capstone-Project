@@ -105,63 +105,6 @@ main {
   color: $gray;
 }
 
-.nav-logo {
-  img {
-    width: 100px;
-    height: 100px;
-  }
-}
-
-.icon-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px auto;
-  padding-left: 0;
-  padding-right: 0;
-
-  a {
-    text-decoration: none;
-    text-align: center;
-    width: 100%;
-
-    img {
-      width: 50%;
-      height: 50%;
-      margin: 10px;
-      border-radius: 100%;
-    }
-
-    p {
-      font-size: 2.5rem;
-      color: $black;
-    }
-  }
-
-  .small {
-    @media only screen and (min-width: 768px) {
-      display: none;
-    }
-  }
-
-  .big {
-    display: none;
-
-    @media only screen and (min-width: 768px) {
-      display: block;
-    }
-  }
-}
-
-.icon-links:hover {
-  text-decoration: none;
-}
-
-iframe {
-  min-height: 350px;
-  border: 0;
-}
-
 /* Item Cards */
 
 .item-card {
@@ -190,7 +133,7 @@ iframe {
 }
 
 .item-price {
-  color: $black;
+  color: $red;
   font-size: 1.4rem;
   padding: 5px;
 }
@@ -211,6 +154,7 @@ iframe {
     display: inline-block;
     margin-left: 10px;
     font-size: 1.4rem;
+    color: $red;
   }
 }
 
@@ -251,6 +195,37 @@ iframe {
   img {
     width: 100%;
   }
+
+  p {
+    margin: 0;
+    color: $red;
+  }
+
+  .affiliate {
+    color: $black;
+    font-family: gotham-light;
+    padding: 5px;
+    white-space: nowrap;
+  }
+}
+
+.item-quality {
+  padding: 0 5px;
+}
+
+.buy-it {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 5px;
+
+  button {
+    width: 25px;
+    height: 25px;
+    color: $gray;
+    margin-right: 25px;
+  }
+
 }
 
 .search-aside {
@@ -263,6 +238,28 @@ iframe {
 
 .search-count {
   line-height: 50px;
+}
+
+.page-number {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .page-btn {
+    width: 25px;
+    height: 25px;
+    margin: 10px 5px;
+    border: 1px solid $gray;
+    border-radius: 2.5px;
+    background-color: white;
+    color: $gray;
+    font-family: helvetica-medium;
+  }
+
+  .active-btn {
+    background-color: $red;
+    color: white;
+  }
 }
 
 /* Footer */
