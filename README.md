@@ -1,6 +1,6 @@
 # Project Name
-Tactical Medical Supply - HTML Capstone Project (Online store)
-=======
+
+# Tactical Medical Supply - HTML Capstone Project (Online store)
 
 This is Brandon's HTML Capstone project
 
@@ -12,30 +12,26 @@ This project was compiled by Brandon in the Microverse HTML/CSS section of the c
 
 ## Built With
 
-- HTML and CSS
-- Atom
-- Ubuntu
-- https://validator.w3.org was used to validate the HTML code in this project
-- Linters used include Lighthouse, Webhint, and Stylelint
-
+-   HTML and CSS
+-   Atom
+-   Ubuntu
+-   <https://validator.w3.org> was used to validate the HTML code in this project
+-   Linters used include Lighthouse, Webhint, and Stylelint
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/defoebrand/HTML-Capstone-Project/working-branch/home.html)
-
+[Live Demo Link](https://eloquent-lewin-cb15d6.netlify.app/results.html)
 
 ## Getting Started
 
 To get your own copy of our project clone the repository to your local machine.
 
-
 ## Author
 
 👤 **Brandon Defoe**
 
-- Github: [@defoebrand](https://github.com/defoebrand)
-- Gmail: defoe.brand@gmail.com
-
+-   Github: [@defoebrand](https://github.com/defoebrand)
+-   Gmail: defoe.brand@gmail.com
 
 ## 🤝 Contributing
 
@@ -49,9 +45,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
--
+\-
 
 ## 📝 License
 
-This project is licensed by Microverse and Notion.so
-=======
+# This project is licensed by Microverse and Notion.so
