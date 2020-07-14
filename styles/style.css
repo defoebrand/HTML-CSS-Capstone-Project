@@ -9962,6 +9962,10 @@ h3 {
 }
 
 /* Page Styles */
+main {
+  max-width: 100%;
+}
+
 /* Header */
 .ad-btn {
   max-height: 40px;
@@ -9971,7 +9975,9 @@ h3 {
 .search-banner::before {
   display: block;
   position: absolute;
-  width: 100%;
+  left: 15px;
+  right: 0;
+  width: calc(100% - 15px);
   height: 100%;
   content: "";
   background-image: url("../images/TCCC-logo.png");
@@ -10046,16 +10052,6 @@ iframe {
 }
 
 /* Item Cards */
-#home .card-wrapper {
-  max-height: 725px;
-  overflow-y: hidden;
-}
-
-#results .card-wrapper {
-  justify-content: center;
-  align-items: center;
-}
-
 .item-card {
   position: relative;
   background-color: white;
@@ -10066,7 +10062,7 @@ iframe {
   box-shadow: 0 0 10px 0 #000;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: center;
 }
 
@@ -10128,6 +10124,7 @@ iframe {
 .horizontal-item-card {
   position: relative;
   background-color: white;
+  width: 500px;
   max-width: 750px;
   margin: 10px auto;
   padding: 5px;
@@ -10140,6 +10137,12 @@ iframe {
   width: 100%;
 }
 
+.search-aside p {
+  color: #000;
+  font-family: gotham-bold;
+  width: 100%;
+}
+
 /* Footer */
 footer .footer-logo {
   display: flex;
@@ -10147,20 +10150,68 @@ footer .footer-logo {
   justify-content: center;
 }
 footer .footer-logo h4 {
-  max-width: 100px;
+  max-width: 300px;
 }
 footer .footer-logo img {
   width: 100px;
   height: 100px;
 }
-footer .cat-links {
+footer .cat-links, footer .small-footer {
   line-height: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
-footer .cat-links h4 {
+footer .cat-links h4, footer .small-footer h4 {
   margin-bottom: 20px;
   color: #d35266;
   padding-bottom: 10px;
   border-bottom: 1px solid #d35266;
+}
+footer .home-cat-links {
+  line-height: 15px;
+}
+footer .home-cat-links h4 {
+  margin-bottom: 20px;
+  color: #d35266;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d35266;
+}
+footer .home-footer-left {
+  max-width: 100px;
+}
+
+.settings, .settings div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+}
+.settings div {
+  align-items: center;
+  flex-direction: row;
+  justify-content: end;
+  width: 75%;
+}
+.settings div p {
+  margin: 0;
+  line-height: 25px;
+  color: #d35266;
+}
+.settings div a {
+  width: 115px;
+  color: #000;
+  font-family: helvetica-light;
+}
+
+.social-links img {
+  max-width: 25px;
+  max-height: 25px;
+  margin: 0 5px;
+}
+
+.small-footer {
+  justify-content: space-around;
 }
 
 /*# sourceMappingURL=style.css.map */

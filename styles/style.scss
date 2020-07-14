@@ -66,6 +66,10 @@ $carousel-control-color: $red;
 
 /* Page Styles */
 
+main {
+  max-width: 100%;
+}
+
 /* Header */
 .ad-btn {
   max-height: 40px;
@@ -75,7 +79,9 @@ $carousel-control-color: $red;
 .search-banner::before {
   display: block;
   position: absolute;
-  width: 100%;
+  left: 15px;
+  right: 0;
+  width: calc(100% - 15px);
   height: 100%;
   content: "";
   background-image: url("../images/TCCC-logo.png");
@@ -157,19 +163,6 @@ iframe {
 }
 
 /* Item Cards */
-#home {
-  .card-wrapper {
-    max-height: 725px;
-    overflow-y: hidden;
-  }
-}
-
-#results {
-  .card-wrapper {
-    justify-content: center;
-    align-items: center;
-  }
-}
 
 .item-card {
   position: relative;
@@ -181,7 +174,7 @@ iframe {
   box-shadow: 0 0 10px 0 $black;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: center;
 }
 
@@ -246,6 +239,7 @@ iframe {
 .horizontal-item-card {
   position: relative;
   background-color: white;
+  width: 500px;
   max-width: 750px;
   margin: 10px auto;
   padding: 5px;
@@ -259,6 +253,14 @@ iframe {
   }
 }
 
+.search-aside {
+  p {
+    color: $black;
+    font-family: gotham-bold;
+    width: 100%;
+  }
+}
+
 /* Footer */
 
 footer {
@@ -268,7 +270,7 @@ footer {
     justify-content: center;
 
     h4 {
-      max-width: 100px;
+      max-width: 300px;
     }
 
     img {
@@ -279,6 +281,9 @@ footer {
 
   .cat-links {
     line-height: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 
     h4 {
       margin-bottom: 20px;
@@ -287,4 +292,60 @@ footer {
       border-bottom: 1px solid $red;
     }
   }
+
+  .home-cat-links {
+    line-height: 15px;
+
+    h4 {
+      margin-bottom: 20px;
+      color: $red;
+      padding-bottom: 10px;
+      border-bottom: 1px solid $red;
+    }
+  }
+
+  .home-footer-left {
+    max-width: 100px;
+  }
+
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+
+  div {
+    @extend .settings;
+    align-items: center;
+    flex-direction: row;
+    justify-content: end;
+    width: 75%;
+
+    p {
+      margin: 0;
+      line-height: 25px;
+      color: $red;
+    }
+
+    a {
+      width: 115px;
+      color: $black;
+      font-family: helvetica-light;
+    }
+  }
+}
+
+.social-links {
+  img {
+    max-width: 25px;
+    max-height: 25px;
+    margin: 0 5px;
+  }
+}
+
+.small-footer {
+  @extend .cat-links;
+  justify-content: space-around;
 }
