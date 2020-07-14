@@ -176,6 +176,7 @@ main {
 
   .affiliate {
     font-size: 0.75rem;
+    padding-left: 5px;
   }
 
   .buy-it {
@@ -284,6 +285,8 @@ main {
 }
 
 .carousel-item {
+  transition: transform 2s ease-in-out !important;
+
   .horizontal-item-card {
     width: 500px;
     margin: 15px auto;

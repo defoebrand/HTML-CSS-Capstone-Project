@@ -10065,6 +10065,7 @@ main {
 }
 .item-card .affiliate {
   font-size: 0.75rem;
+  padding-left: 5px;
 }
 .item-card .buy-it {
   justify-content: space-around;
@@ -10157,6 +10158,9 @@ main {
   padding: 5px;
 }
 
+.carousel-item {
+  transition: transform 2s ease-in-out !important;
+}
 .carousel-item .horizontal-item-card {
   width: 500px;
   margin: 15px auto;
