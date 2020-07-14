@@ -10023,7 +10023,7 @@ main {
 .video p,
 .video ul {
   color: #383838 !important;
-  font-family: helvetica-medium;
+  font-family: helvetica-medium, sans-serif;
 }
 .video ul {
   padding: 0 5px;
@@ -10122,7 +10122,7 @@ main {
 }
 .horizontal-item-card .affiliate {
   color: #000;
-  font-family: gotham-light;
+  font-family: gotham-light, sans-serif;
   padding: 5px;
   white-space: nowrap;
 }
@@ -10146,7 +10146,7 @@ main {
 
 .search-aside p {
   color: #000;
-  font-family: gotham-bold;
+  font-family: gotham-bold, sans-serif;
   width: 100%;
 }
 
@@ -10167,7 +10167,7 @@ main {
   border-radius: 2.5px;
   background-color: white;
   color: #888;
-  font-family: helvetica-medium;
+  font-family: helvetica-medium, sans-serif;
 }
 .page-number .active-btn {
   background-color: #d35266;
@@ -10232,7 +10232,7 @@ footer .home-footer-left {
 .settings div a {
   width: 115px;
   color: #000;
-  font-family: helvetica-light;
+  font-family: helvetica-light, sans-serif;
 }
 
 .social-links img {

@@ -130,7 +130,7 @@ main {
   p,
   ul {
     color: $dark !important;
-    font-family: helvetica-medium;
+    font-family: helvetica-medium, sans-serif;
   }
 
   ul {
@@ -237,7 +237,7 @@ main {
 
   .affiliate {
     color: $black;
-    font-family: gotham-light;
+    font-family: gotham-light, sans-serif;
     padding: 5px;
     white-space: nowrap;
   }
@@ -259,13 +259,12 @@ main {
     color: $gray;
     margin-right: 25px;
   }
-
 }
 
 .search-aside {
   p {
     color: $black;
-    font-family: gotham-bold;
+    font-family: gotham-bold, sans-serif;
     width: 100%;
   }
 }
@@ -287,7 +286,7 @@ main {
     border-radius: 2.5px;
     background-color: white;
     color: $gray;
-    font-family: helvetica-medium;
+    font-family: helvetica-medium, sans-serif;
   }
 
   .active-btn {
@@ -342,7 +341,6 @@ footer {
   .home-footer-left {
     max-width: 100px;
   }
-
 }
 
 .settings {
@@ -353,6 +351,7 @@ footer {
 
   div {
     @extend .settings;
+
     align-items: center;
     flex-direction: row;
     justify-content: end;
@@ -367,7 +366,7 @@ footer {
     a {
       width: 115px;
       color: $black;
-      font-family: helvetica-light;
+      font-family: helvetica-light, sans-serif;
     }
   }
 }
@@ -382,5 +381,6 @@ footer {
 
 .small-footer {
   @extend .cat-links;
+
   justify-content: space-around;
 }
