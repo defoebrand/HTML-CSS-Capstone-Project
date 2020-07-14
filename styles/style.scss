@@ -139,6 +139,14 @@ main {
   }
 }
 
+.results-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
 /* Item Cards */
 
 .item-card {
@@ -217,9 +225,8 @@ main {
 .horizontal-item-card {
   position: relative;
   background-color: white;
-  width: 500px;
-  max-width: 750px;
-  margin: 10px auto;
+  width: 100%;
+  margin: 10px 15px;
   padding: 5px;
   box-shadow: 0 0 10px 0 $black;
   display: flex;
@@ -228,6 +235,7 @@ main {
 
   img {
     width: 100%;
+    max-width: 200px;
   }
 
   p {
@@ -239,7 +247,13 @@ main {
     color: $black;
     font-family: gotham-light, sans-serif;
     padding: 5px;
-    white-space: nowrap;
+  }
+}
+
+.carousel-item {
+  .horizontal-item-card {
+    width: 500px;
+    margin: 15px auto;
   }
 }
 
@@ -262,6 +276,8 @@ main {
 }
 
 .search-aside {
+  max-width: 325px;
+
   p {
     color: $black;
     font-family: gotham-bold, sans-serif;
@@ -343,6 +359,14 @@ footer {
   }
 }
 
+.footer-nav {
+  a {
+    display: block;
+    margin-bottom: 16px;
+    color: $dark;
+  }
+}
+
 .settings {
   display: flex;
   flex-direction: column;
@@ -372,10 +396,19 @@ footer {
 }
 
 .social-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media only screen and (min-width: 320px) {
+    flex-direction: row;
+  }
+
   img {
     max-width: 25px;
     max-height: 25px;
-    margin: 0 5px;
+    margin: 5px;
   }
 }
 

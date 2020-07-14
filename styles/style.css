@@ -10030,6 +10030,14 @@ main {
   list-style: inside;
 }
 
+.results-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
 /* Item Cards */
 .item-card {
   position: relative;
@@ -10104,9 +10112,8 @@ main {
 .horizontal-item-card {
   position: relative;
   background-color: white;
-  width: 500px;
-  max-width: 750px;
-  margin: 10px auto;
+  width: 100%;
+  margin: 10px 15px;
   padding: 5px;
   box-shadow: 0 0 10px 0 #000;
   display: flex;
@@ -10115,6 +10122,7 @@ main {
 }
 .horizontal-item-card img {
   width: 100%;
+  max-width: 200px;
 }
 .horizontal-item-card p {
   margin: 0;
@@ -10124,7 +10132,11 @@ main {
   color: #000;
   font-family: gotham-light, sans-serif;
   padding: 5px;
-  white-space: nowrap;
+}
+
+.carousel-item .horizontal-item-card {
+  width: 500px;
+  margin: 15px auto;
 }
 
 .item-quality {
@@ -10144,6 +10156,9 @@ main {
   margin-right: 25px;
 }
 
+.search-aside {
+  max-width: 325px;
+}
 .search-aside p {
   color: #000;
   font-family: gotham-bold, sans-serif;
@@ -10212,6 +10227,12 @@ footer .home-footer-left {
   max-width: 100px;
 }
 
+.footer-nav a {
+  display: block;
+  margin-bottom: 16px;
+  color: #383838;
+}
+
 .settings, .settings div {
   display: flex;
   flex-direction: column;
@@ -10235,10 +10256,21 @@ footer .home-footer-left {
   font-family: helvetica-light, sans-serif;
 }
 
+.social-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (min-width: 320px) {
+  .social-links {
+    flex-direction: row;
+  }
+}
 .social-links img {
   max-width: 25px;
   max-height: 25px;
-  margin: 0 5px;
+  margin: 5px;
 }
 
 .small-footer {
