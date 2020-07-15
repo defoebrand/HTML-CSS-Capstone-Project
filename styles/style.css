@@ -9933,40 +9933,16 @@ h3 {
     border-color: #dee2e6;
   }
 }
-.goth-lt {
-  font-family: gotham-light, sans-serif;
-}
-
-.goth-bld {
-  font-family: gotham-bold, sans-serif;
-}
-
-.helvet-lt {
-  font-family: helvetica-light, sans-serif;
-}
-
-.helvet-md {
-  font-family: helvetica-medium, sans-serif;
-}
-
-.helvet-bld {
-  font-family: helvetica-bold, sans-serif;
-}
-
-.border-dark {
-  border: 1px solid black;
-}
-
-.border-light {
-  border: 1px solid gray;
-}
-
 /* Page Styles */
 main {
   max-width: 100%;
 }
 
 /* Header */
+header {
+  font-family: helvetica-light, sans-serif;
+}
+
 .burger-content {
   position: absolute;
   top: 40px;
@@ -10016,6 +9992,10 @@ main {
   min-width: 245px;
 }
 
+.btn-dark {
+  font-family: helvetica-bold, sans-serif;
+}
+
 .nav-link {
   color: #888;
 }
@@ -10035,6 +10015,7 @@ a.text-danger:hover {
   color: #ff344c !important;
 }
 
+/* Carousel */
 .video iframe {
   height: 205px;
   border: none;
@@ -10052,6 +10033,7 @@ a.text-danger:hover {
   list-style: inside;
 }
 
+/* Results specific styles */
 .results-section {
   display: flex;
   justify-content: center;
@@ -10060,7 +10042,92 @@ a.text-danger:hover {
   width: 100%;
 }
 
+.search-aside {
+  max-width: 325px;
+}
+.search-aside p, .search-aside .item-card .buy-it b, .item-card .buy-it .search-aside b {
+  color: #000;
+  font-family: gotham-bold, sans-serif;
+  width: 100%;
+}
+
+.search-count {
+  line-height: 50px;
+}
+
+.page-number {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.page-number .page-btn {
+  width: 25px;
+  height: 25px;
+  margin: 10px 5px;
+  border: 1px solid #888;
+  border-radius: 2.5px;
+  background-color: white;
+  color: #888;
+  font-family: helvetica-medium, sans-serif;
+}
+.page-number .active-btn {
+  background-color: #d35266;
+  color: white;
+}
+
 /* Item Cards */
+.horizontal-item-card {
+  position: relative;
+  background-color: white;
+  width: 100%;
+  margin: 10px 15px;
+  padding: 5px;
+  box-shadow: 0 0 10px 0 #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: gotham-bold, sans-serif;
+}
+.horizontal-item-card img {
+  width: 100%;
+  max-width: 200px;
+}
+.horizontal-item-card p, .horizontal-item-card .item-card .buy-it b, .item-card .buy-it .horizontal-item-card b {
+  margin: 0;
+  color: #d35266;
+}
+.horizontal-item-card .affiliate {
+  color: #000;
+  font-family: gotham-light, sans-serif;
+  padding: 5px;
+}
+
+.carousel-item {
+  transition: transform 2s ease-in-out !important;
+}
+.carousel-item .horizontal-item-card {
+  width: 500px;
+  height: 255px;
+  margin: 15px auto;
+}
+.carousel-item .col-7 {
+  height: 190px;
+}
+
+.buy-it {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 5px;
+  font-family: gotham-light, sans-serif;
+}
+.buy-it button {
+  width: 25px;
+  height: 25px;
+  color: #888;
+  margin-right: 25px;
+}
+
 .item-card {
   position: relative;
   background-color: white;
@@ -10073,6 +10140,7 @@ a.text-danger:hover {
   flex-direction: column;
   align-items: start;
   justify-content: space-between;
+  font-family: gotham-bold, sans-serif;
 }
 .item-card h2 {
   font-size: 1.25rem;
@@ -10083,6 +10151,7 @@ a.text-danger:hover {
 .item-card .affiliate {
   font-size: 0.75rem;
   padding-left: 5px;
+  font-family: gotham-light, sans-serif;
 }
 .item-card .buy-it {
   justify-content: space-around;
@@ -10150,94 +10219,32 @@ a.text-danger:hover {
   z-index: 3;
 }
 
-.horizontal-item-card {
-  position: relative;
-  background-color: white;
-  width: 100%;
-  margin: 10px 15px;
-  padding: 5px;
-  box-shadow: 0 0 10px 0 #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.horizontal-item-card img {
-  width: 100%;
-  max-width: 200px;
-}
-.horizontal-item-card p, .horizontal-item-card .item-card .buy-it b, .item-card .buy-it .horizontal-item-card b {
-  margin: 0;
-  color: #d35266;
-}
-.horizontal-item-card .affiliate {
-  color: #000;
-  font-family: gotham-light, sans-serif;
-  padding: 5px;
-}
-
-.carousel-item {
-  transition: transform 2s ease-in-out !important;
-}
-.carousel-item .horizontal-item-card {
-  width: 500px;
-  height: 255px;
-  margin: 15px auto;
-}
-.carousel-item .col-7 {
-  height: 190px;
+small {
+  font-family: helvetica-light, sans-serif;
 }
 
 .item-quality {
   padding: 0 5px;
 }
 
-.buy-it {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  padding: 5px;
-}
-.buy-it button {
-  width: 25px;
-  height: 25px;
-  color: #888;
-  margin-right: 25px;
-}
-
-.search-aside {
-  max-width: 325px;
-}
-.search-aside p, .search-aside .item-card .buy-it b, .item-card .buy-it .search-aside b {
-  color: #000;
-  font-family: gotham-bold, sans-serif;
-  width: 100%;
-}
-
-.search-count {
-  line-height: 50px;
-}
-
-.page-number {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-.page-number .page-btn {
-  width: 25px;
-  height: 25px;
-  margin: 10px 5px;
-  border: 1px solid #888;
-  border-radius: 2.5px;
-  background-color: white;
-  color: #888;
-  font-family: helvetica-medium, sans-serif;
-}
-.page-number .active-btn {
-  background-color: #d35266;
-  color: white;
-}
-
 /* Footer */
+.social-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (min-width: 320px) {
+  .social-links {
+    flex-direction: row;
+  }
+}
+.social-links img {
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+}
+
 footer .footer-logo {
   display: flex;
   align-items: center;
@@ -10293,7 +10300,7 @@ footer .home-footer-left {
   justify-content: end;
   width: 75%;
 }
-.settings div p, .settings div .item-card .buy-it b, .item-card .buy-it .settings div b {
+.settings div .settings-options {
   margin: 0;
   line-height: 25px;
   color: #d35266;
@@ -10302,23 +10309,6 @@ footer .home-footer-left {
   width: 115px;
   color: #000;
   font-family: helvetica-light, sans-serif;
-}
-
-.social-links {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-@media only screen and (min-width: 320px) {
-  .social-links {
-    flex-direction: row;
-  }
-}
-.social-links img {
-  width: 25px;
-  height: 25px;
-  margin: 5px;
 }
 
 .small-footer {
