@@ -13,25 +13,34 @@
 
 <body id="results">
   <nav class="navbar navbar-light bg-dark justify-content-around flex-nowrap sticky-top">
-    <a class="navbar-brand text-white d-flex align-items-center" href="https://www.naemt.org/education/naemt-tccc">
-      <img src="images/TCCC-logo.png" width="45" height="45" class="d-inline-block align-top mr-2" alt="TC3 Logo" loading="lazy">TacMedCent
-    </a>
-    <div class="position-relative d-sm-none">
-      <a class="btn btn-danger" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-bars"></i></a>
-      <div class="collapse burger-content" id="collapseExample">
-        <div class="d-flex flex-column text-nowrap">
-          <a class="nav-link active text-danger px-0 px-md-2 mx-0 mx-md-1 mx-lg-2" href="home.html"><span><i class="fa fa-home px-2"></i></span>Home</a>
-          <a class="nav-link px-0 px-md-2  mx-0 mx-md-1 mx-lg-2" href="results.html"><span><i class="fa fa-th px-2"></i></span>Categories</a>
-          <a class="nav-link px-0 px-md-2  mx-0 mx-md-1 mx-lg-2 text-center" href="#"><span><i class="fa fa-shopping-cart px-2"></i></span>Shopping Cart</a>
-          <input type="text" placeholder=" Search..">
+    <div class="d-flex align-items-center">
+      <a class="navbar-brand text-white d-flex align-items-center mr-5 mr-sm-0" href="https://www.naemt.org/education/naemt-tccc">
+        <img src="images/TCCC-logo.png" width="45" height="45" class="d-inline-block align-top mr-2" alt="TC3 Logo" loading="lazy">TacMedCent
+      </a>
+      <div class="position-relative d-sm-none">
+        <a class="btn btn-danger" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-bars"></i></a>
+        <div class="collapse burger-content" id="collapseExample">
+          <div class="d-flex flex-column text-nowrap">
+            <a class="nav-link active text-danger px-0 mx-0" href="home.html"><span><i class="fa fa-home px-2"></i></span>Home</a>
+            <a class="nav-link px-0  mx-0" href="results.html"><span><i class="fa fa-th px-2"></i></span>Categories</a>
+            <a class="nav-link px-0  mx-0" href="#"><span><i class="fa fa-shopping-cart px-2"></i></span>Shopping Cart</a>
+            <a class="nav-link px-0  mx-0" href="#"><span><i class="fa fa-envelope px-2"></i></span>Log In</a>
+            <input type="text" placeholder=" Search..">
+          </div>
         </div>
       </div>
+      <div class="d-none d-sm-flex flex-row text-nowrap align-items-center justify-content-center">
+        <a class="nav-link active text-danger px-0 px-md-2 mx-0 mx-md-1 mx-lg-2" href="home.html"><span><i class="fa fa-home px-2"></i></span>Home</a>
+        <a class="nav-link px-0 px-md-2  mx-0 mx-md-1 mx-lg-2" href="results.html"><span><i class="fa fa-th px-2"></i></span>Categories</a>
+        <a class="nav-link px-0 px-md-2  mx-0 mx-md-1 mx-lg-2 text-center" href="#"><span><i class="fa fa-shopping-cart px-2"></i></span>Shopping Cart</a>
+        <a class="btn btn-danger d-none d-md-block px-0 px-md-2 mx-0 mx-md-1 mx-lg-2 rounded-1 ad-btn" href="#">Request Product</a>
+        <i class="fa fa-2x fa-user d-none d-sm-inline-block d-lg-none ml-3"></i>
+      </div>
     </div>
-    <div class="d-none d-sm-flex flex-row text-nowrap">
-      <a class="nav-link active text-danger px-0 px-md-2 mx-0 mx-md-1 mx-lg-2" href="home.html"><span><i class="fa fa-home px-2"></i></span>Home</a>
-      <a class="nav-link px-0 px-md-2  mx-0 mx-md-1 mx-lg-2" href="results.html"><span><i class="fa fa-th px-2"></i></span>Categories</a>
-      <a class="nav-link px-0 px-md-2  mx-0 mx-md-1 mx-lg-2 text-center" href="#"><span><i class="fa fa-shopping-cart px-2"></i></span>Shopping Cart</a>
-      <a class="btn btn-danger d-none d-md-block px-0 px-md-2 mx-0 mx-md-1 mx-lg-2 rounded-1 ad-btn" href="#">Request Product</a>
+    <div class="d-none d-lg-inline-block log-in text-nowrap">
+      <i class="fa fa-envelope"></i>
+      <a href="#" class="mx-2 log-in-link">Log In</a>
+      <img src="images/profile.png" alt="User Image">
     </div>
   </nav>
   <header class="d-flex flex-column">

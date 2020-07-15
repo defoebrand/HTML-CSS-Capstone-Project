@@ -27,7 +27,7 @@ $danger: $red;
 $light: #f7f7f7;
 $gray: #888;
 $dark: #383838;
-$font-family-sans-serif: "gotham-light", "gotham-bold", blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif: "gotham-light", "gotham-bold", "helvetica-light", "helvetica-medium", "helvetica-bold", blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $carousel-control-color: $red;
 
 .active {
@@ -122,6 +122,25 @@ a.text-danger:hover {
 
   a.text-danger:hover {
     color: #ff344c !important;
+  }
+}
+
+.fa-user {
+  color: $gray;
+}
+
+.log-in {
+  color: $gray;
+
+  a {
+    color: $light;
+    font-family: gotham-bold, sans-serif;
+  }
+
+  img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
   }
 }
 
