@@ -10163,7 +10163,11 @@ main {
 }
 .carousel-item .horizontal-item-card {
   width: 500px;
+  height: 255px;
   margin: 15px auto;
+}
+.carousel-item .col-7 {
+  height: 190px;
 }
 
 .item-quality {
