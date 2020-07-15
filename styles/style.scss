@@ -48,6 +48,10 @@ header {
   font-family: helvetica-light, sans-serif;
 }
 
+.navbar-brand {
+  font-family: helvetica-bold, sans-serif;
+}
+
 .burger-content {
   position: absolute;
   top: 40px;
@@ -384,6 +388,7 @@ small {
 
 .item-quality {
   padding: 0 5px;
+  font-family: helvetica-medium, sans-serif;
 }
 
 .home-card-wrapper {
