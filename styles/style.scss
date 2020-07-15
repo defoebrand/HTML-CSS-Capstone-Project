@@ -134,6 +134,16 @@ a.text-danger:hover {
   color: $light;
 }
 
+.collapse {
+  .nav-link:hover {
+    color: $dark;
+  }
+
+  a.text-danger:hover {
+    color: #ff344c !important;
+  }
+}
+
 .video {
   iframe {
     height: 205px;

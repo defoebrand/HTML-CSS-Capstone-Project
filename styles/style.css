@@ -10028,6 +10028,13 @@ a.text-danger:hover {
   color: #f7f7f7;
 }
 
+.collapse .nav-link:hover {
+  color: #383838;
+}
+.collapse a.text-danger:hover {
+  color: #ff344c !important;
+}
+
 .video iframe {
   height: 205px;
   border: none;
