@@ -488,7 +488,7 @@ footer {
 .settings {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-end;
   justify-content: space-around;
 
   div {
@@ -496,13 +496,17 @@ footer {
 
     align-items: center;
     flex-direction: row;
-    justify-content: end;
+    justify-content: flex-end;
     width: 75%;
 
-    .settings-options {
+    .setting-options {
       margin: 0;
       line-height: 25px;
       color: $red;
+
+      p {
+        margin: 0;
+      }
     }
 
     a {

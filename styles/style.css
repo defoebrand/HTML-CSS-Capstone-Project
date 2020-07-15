@@ -10335,19 +10335,22 @@ footer .home-footer-left {
 .settings, .settings div {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-end;
   justify-content: space-around;
 }
 .settings div {
   align-items: center;
   flex-direction: row;
-  justify-content: end;
+  justify-content: flex-end;
   width: 75%;
 }
-.settings div .settings-options {
+.settings div .setting-options {
   margin: 0;
   line-height: 25px;
   color: #d35266;
+}
+.settings div .setting-options p, .settings div .setting-options .item-card .buy-it b, .item-card .buy-it .settings div .setting-options b {
+  margin: 0;
 }
 .settings div a {
   width: 115px;
