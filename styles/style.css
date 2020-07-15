@@ -10012,10 +10012,20 @@ main {
   line-height: 38px;
   background-color: #f7f7f7;
   color: #383838;
+  font-family: helvetica-medium, sans-serif;
+  min-width: 245px;
 }
 
 .nav-link {
   color: #888;
+}
+
+a.text-danger:hover {
+  color: #ba6d79 !important;
+}
+
+.nav-link:hover {
+  color: #f7f7f7;
 }
 
 .video iframe {

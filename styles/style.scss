@@ -117,11 +117,21 @@ main {
     line-height: 38px;
     background-color: $light;
     color: $dark;
+    font-family: helvetica-medium, sans-serif;
+    min-width: 245px;
   }
 }
 
 .nav-link {
   color: $gray;
+}
+
+a.text-danger:hover {
+  color: #ba6d79 !important;
+}
+
+.nav-link:hover {
+  color: $light;
 }
 
 .video {
