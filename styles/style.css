@@ -10086,6 +10086,8 @@ a.text-danger:hover {
   background-color: white;
   color: #888;
   font-family: helvetica-medium, sans-serif;
+  text-decoration: none;
+  text-align: center;
 }
 .page-number .active-btn {
   background-color: #d35266;
@@ -10242,6 +10244,31 @@ small {
 
 .item-quality {
   padding: 0 5px;
+}
+
+.home-card-wrapper .flex-1352 {
+  display: none;
+}
+@media only screen and (min-width: 1352px) {
+  .home-card-wrapper .flex-1352 {
+    display: flex;
+  }
+}
+.home-card-wrapper .flex-1572 {
+  display: none;
+}
+@media only screen and (min-width: 1572px) {
+  .home-card-wrapper .flex-1572 {
+    display: flex;
+  }
+}
+.home-card-wrapper .flex-1792 {
+  display: none;
+}
+@media only screen and (min-width: 1792px) {
+  .home-card-wrapper .flex-1792 {
+    display: flex;
+  }
 }
 
 /* Footer */

@@ -203,6 +203,8 @@ a.text-danger:hover {
     background-color: white;
     color: $gray;
     font-family: helvetica-medium, sans-serif;
+    text-decoration: none;
+    text-align: center;
   }
 
   .active-btn {
@@ -382,6 +384,32 @@ small {
 
 .item-quality {
   padding: 0 5px;
+}
+
+.home-card-wrapper {
+  .flex-1352 {
+    display: none;
+
+    @media only screen and (min-width: 1352px) {
+      display: flex;
+    }
+  }
+
+  .flex-1572 {
+    display: none;
+
+    @media only screen and (min-width: 1572px) {
+      display: flex;
+    }
+  }
+
+  .flex-1792 {
+    display: none;
+
+    @media only screen and (min-width: 1792px) {
+      display: flex;
+    }
+  }
 }
 
 /* Footer */
