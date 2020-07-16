@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="icon" type="image/png" href="images/TCCC-logo.png">
+  <title>TMC - Search Results</title>
+</head>
+
+<body id="results">
+  <nav class="navbar navbar-light bg-dark justify-content-around flex-nowrap sticky-top">
+    <div class="d-flex align-items-center">
+      <a class="navbar-brand text-white d-flex align-items-center mr-5 mr-sm-0" href="https://www.naemt.org/education/naemt-tccc">
+        <img src="images/TCCC-logo.png" width="45" height="45" class="d-inline-block align-top mr-2" alt="TC3 Logo" loading="lazy">TacMedCent
+      </a>
+      <div class="position-relative d-sm-none">
+        <a class="btn btn-danger" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-bars"></i></a>
+        <div class="collapse burger-content" id="collapseExample">
+          <div class="d-flex flex-column text-nowrap">
+            <a class="nav-link active text-danger px-0 mx-0" href="home.html"><span><i class="fa fa-home px-2"></i></span>Home</a>
+            <a class="nav-link px-0  mx-0" href="results.html"><span><i class="fa fa-th px-2"></i></span>Categories</a>
+            <a class="nav-link px-0  mx-0" href="#"><span><i class="fa fa-shopping-cart px-2"></i></span>Shopping Cart</a>
+            <a class="nav-link px-0  mx-0" href="#"><span><i class="fa fa-envelope px-2"></i></span>Log In</a>
+            <input type="text" placeholder=" Search..">
+          </div>
+        </div>
+      </div>
+      <div class="d-none d-sm-flex flex-row text-nowrap align-items-center justify-content-center">
+        <a class="nav-link active text-danger px-0 px-lg-2 mx-0 mx-md-1 mx-lg-2" href="home.html"><span><i class="fa fa-home px-2"></i></span>Home</a>
+        <a class="nav-link px-0 px-lg-2  mx-0 mx-md-1 mx-lg-2" href="results.html"><span><i class="fa fa-th px-2"></i></span>Categories</a>
+        <a class="nav-link px-0 px-lg-2  mx-0 mr-md-1 mx-lg-2 text-center" href="#"><span><i class="fa fa-shopping-cart px-2"></i></span>Shopping Cart</a>
+        <a class="btn btn-danger d-none d-md-block px-0 px-md-2 mx-0 mx-md-1 mx-lg-2 rounded-1 ad-btn" href="#">Request Product</a>
+        <i class="fa fa-2x fa-user d-none d-sm-inline-block d-lg-none ml-3"></i>
+      </div>
+    </div>
+    <div class="d-none d-lg-inline-block log-in text-nowrap">
+      <i class="fa fa-envelope"></i>
+      <a href="#" class="mx-2 log-in-link">Log In</a>
+      <img src="images/profile.png" alt="User Image">
+    </div>
+  </nav>
+  <header class="d-flex flex-column">
+    <section class="bg-danger search-banner flex-column align-items-start justify-content-center text-white py-5 pl-2 px-lg-5 d-none d-md-flex position-relative">
+      <h1 class="text-white">Tactical Medical Center</h1>
+      <p>Before their God, Before their Mom, They call for their Medic</p>
+      <div class="container-fluid flex-nowrap row search-bar">
+        <div class="col-2 px-0 d-flex">
+          <select class="col-12 d-flex px-0">
+            <option selected>Categories</option>
+            <option>Massive Bleeding</option>
+            <option>Airway</option>
+            <option>Respiration</option>
+            <option>Circulation</option>
+            <option>Hypothermia</option>
+          </select>
+        </div>
+        <p class="col-4 text-nowrap px-0 mx-1 my-0 text-center ">What are you searching for?</p>
+        <input type="text" class="col-4 d-flex mr-2" placeholder="Search ......">
+        <a href="results.html" class="btn btn-dark col-2 mx-n2 rounded-0">Search</a>
+      </div>
+    </section>
+
+  </header>
+
+  <main class="row bg-light m-0">
+    <aside class="col-4 d-none d-md-flex flex-column p-5 border-right search-aside">
+      <p>Affiliation</p>
+      <div class="radios d-flex flex-column justify-content-center align-items-start py-3 border-top">
+        <label class="text-nowrap" for="medical-professional"><input type="radio" id="medical-professional">
+          Medical Professional</label>
+        <label for="military"><input type="radio" id="military">
+          Military</label>
+        <label for="civilian"><input type="radio" id="civilian">
+          Civilian</label><br>
+      </div>
+
+      <p>Category</p>
+      <div class="checkboxes d-flex flex-column justify-content-center align-items-start py-3 border-top">
+        <label for="massive-bleeding"><input type="checkbox" id="massive-bleeding" checked>
+          Massive Bleeding</label>
+        <label for="airway"><input type="checkbox" id="airway" checked>
+          Airway</label>
+        <label for="respiration"><input type="checkbox" id="respiration" checked>
+          Respiration</label>
+        <label for="circulation"><input type="checkbox" id="circulation" checked>
+          Circulation</label>
+        <label for="hypothermia"><input type="checkbox" id="hypothermia" checked>
+          Hypothermia</label>
+      </div>
+
+      <a href="results.html" class="btn btn-dark border rounded-0">Search</a>
+    </aside>
+    <section class="col-12 col-md-7 col-xl-8 ml-md-0 p-0 mb-3 border-right results-section">
+      <div class="border-bottom w-100 mb-3">
+        <p class="search-count m-0 px-2"><strong>133</strong> results for "medical" in "any" category</p>
+      </div>
+      <div class="horizontal-item-card sale row">
+        <img class="card-img col-5" src="images/bleed-control.png" alt="Bleeding Control Kit">
+        <div class="col-7">
+          <h2 class="item-name">Bleeding Control Kit</h2>
+          <p class="item-quality">Highest Quality!</p>
+          <p class="affiliate"><small>From</small> Taktinės Medicinos Centras</p>
+          <div class="buy-it">
+            <button class="p-0" type="button" name="button"><i class="fa fa-plus"></i></button>
+            <p class="item-price">$101.00
+              <b class="sale-price">$89.99</b></p>
+          </div>
+        </div>
+      </div>
+      <div class="horizontal-item-card sale row">
+        <img class="card-img col-5" src="images/cas-card.png" alt="Casualty Card">
+        <div class="col-7">
+          <h2 class="item-name">Casualty Card</h2>
+          <p class="item-quality">Great Quality!</p>
+          <p class="affiliate"><small>From</small> Taktinės Medicinos Centras</p>
+          <div class="buy-it">
+            <button class="p-0" type="button" name="button"><i class="fa fa-plus"></i></button>
+            <p class="item-price">$1.25
+              <b class="sale-price">$0.99</b></p>
+          </div>
+        </div>
+      </div>
+      <div class="horizontal-item-card row">
+        <img class="card-img col-5" src="images/thermal-blanket.png" alt="Thermal Blanket">
+        <div class="col-7">
+          <h2 class="item-name">Thermal Blanket</h2>
+          <p class="item-quality">High Quality!</p>
+          <p class="affiliate"><small>From</small> Taktinės Medicinos Centras</p>
+          <div class="buy-it">
+            <button class="p-0" type="button" name="button"><i class="fa fa-plus"></i></button>
+            <p class="item-price">$101.00
+              <b class="sale-price">$89.99</b></p>
+          </div>
+        </div>
+      </div>
+      <div class="horizontal-item-card sale row">
+        <img class="card-img col-5" src="images/medical-bag.png" alt="Tactical Backpack">
+        <div class="col-7">
+          <h2 class="item-name">Tactical Medical Backpack</h2>
+          <p class="item-quality">High Quality!</p>
+          <p class="affiliate"><small>From</small> Taktinės Medicinos Centras</p>
+          <div class="buy-it">
+            <button class="p-0" type="button" name="button"><i class="fa fa-plus"></i></button>
+            <p class="item-price">$101.00
+              <b class="sale-price">$89.99</b></p>
+          </div>
+        </div>
+      </div>
+      <div class="horizontal-item-card row">
+        <img class="card-img col-5" src="images/pneumo-needle.png" alt="TPAK Needle">
+        <div class="col-7">
+          <h2 class="item-name">TPAK</h2>
+          <p class="item-quality">Highest Quality!</p>
+          <p class="affiliate"><small>From</small> Tactical Medical Solutions</p>
+          <div class="buy-it">
+            <button class="p-0" type="button" name="button"><i class="fa fa-plus"></i></button>
+            <p class="item-price">$10.56
+              <b class="sale-price">$8.99</b></p>
+          </div>
+        </div>
+      </div>
+      <div class="horizontal-item-card row">
+        <img class="card-img col-5" src="images/sof4-tq.png" alt="Tourniquet">
+        <div class="col-7">
+          <h2 class="item-name">SOF&reg; Tourniquet<br />4<sup>th</sup> Generation</h2>
+          <p class="item-quality">Highest Quality!</p>
+          <p class="affiliate"><small>From</small> Tactical Medical Solutions</p>
+          <div class="buy-it">
+            <button class="p-0" type="button" name="button"><i class="fa fa-plus"></i></button>
+            <p class="item-price">$101.00
+              <b class="sale-price">$89.99</b></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <nav class="page-number border-top mb-5 pt-3">
+      <a href="#" class="page-btn p-0">1</a>
+      <a href="#" class="page-btn p-0 active-btn">2</a>
+      <a href="#" class="page-btn p-0">3</a>
+      <a href="#" class="page-btn p-0">4</a>
+      <a href="#" class="page-btn p-0">5</a>
+      <p class="d-inline-block p-0 mb-1 align-self-end">...</p>
+      <a href="#" class="page-btn p-0">8</a>
+    </nav>
+  </main>
+  <footer class="row p-0 m-0 border-top">
+    <section class="cat-links w-100 mx-0 p-5 flex-column flex-sm-row">
+      <div class="col-md-4 d-none d-md-block footer-nav">
+        <h4>Categories</h4>
+        <a href="results.html">Massive Bleeding</a>
+        <a href="results.html">Airway</a>
+        <a href="results.html">Respiration</a>
+        <a href="results.html">Circulation</a>
+        <a href="results.html">Hypothermia</a>
+      </div>
+      <div class="col-sm-6 col-md-4 footer-nav">
+        <h4>Navigation</h4>
+        <a href="home.html">Home</a>
+        <a href="home.html">About Us</a>
+        <a href="https://www.naemt.org/education/naemt-tccc">About TCCC</a>
+        <a href="https://www.takmedcentras.lt/">Affiliates</a>
+        <a href="home.html">Contact Us</a>
+      </div>
+      <div class="settings col-sm-5 ml-5 px-5 col-md-4">
+        <div>
+          <p class="setting-options">Country</p>
+          <a href="#" class="btn btn-light border my-2 my-sm-0 mx-2">Lietuva</a>
+        </div>
+        <div>
+          <p class="setting-options">Language</p>
+          <a href="#" class="btn btn-light border my-2 my-sm-0 mx-2">Lietuviškai</a>
+        </div>
+        <div>
+          <p class="setting-options">Currency</p>
+          <a href="#" class="btn btn-light border my-2 my-sm-0 mx-2">Euro</a>
+        </div>
+      </div>
+    </section>
+    <section class="small-footer p-3 text-center text-muted w-100 border-top">
+      <h5><small>Copyright &copy; 2020 TacMedCent.com. All Rights Reserved. Compiled by Brandon Defoe. Designed by <a href="https://www.behance.net/M_Awad">Mohammed Awad</a></small></h5>
+      <div class="social-links text-nowrap">
+        <a href="https://twitter.com/defoebrand"><img alt="twitter logo" src="images/twitter.png" /></a>
+        <a href="https://www.linkedin.com/in/defoebrand/"><img alt="linkedin logo" src="images/linkedin.png" /></a>
+        <a href="https://medium.com/@defoe.brand"><img alt="medium logo" src="images/medium.png" /></a>
+      </div>
+    </section>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
