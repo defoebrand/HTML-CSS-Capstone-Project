@@ -4,7 +4,6 @@ This is Brandon's HTML Capstone project
 
 ![Home Page Screenshot](https://rawcdn.githack.com/defoebrand/HTML-CSS-Capstone-Project/947f174750b0b007a2ee2ad3e720ef1a990cacd2/images/home-screenshot.png)
 ![Search Results Page Screen Screenshot](https://rawcdn.githack.com/defoebrand/HTML-CSS-Capstone-Project/947f174750b0b007a2ee2ad3e720ef1a990cacd2/images/results-screenshot.png)
-![Linters Screenshot](images/linters-screenshot.png)
 
 This project was compiled by Brandon in the HTML/CSS section of the Microverse course work as the HTML/CSS capstone project. It involved using this design: <https://www.behance.net/gallery/24796463/ZATTIX> to create a real-world-like project. Modeled after an electronics store, this is a medical supply store.
 
