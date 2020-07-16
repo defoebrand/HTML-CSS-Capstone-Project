@@ -52,6 +52,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 \- [Mohammed Awad](https://www.behance.net/M_Awad) as designer of this layout
+\- Thank you to the TSEs for your encouraging words!
 
 ## 📝 License
 
